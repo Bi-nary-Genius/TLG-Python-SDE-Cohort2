@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+
+
+#Below is the code for the Shebang, input, print, concat, and variables challenge.
+
+def main():
+
+    #First pause the program and wait for the user to input their name.
+    name = input("Please enter your name: ")
+
+    #Next, pause the program and wait for the user to provide the day of the week.
+    day_of_week = input("What day of the week is it? ")
+
+    #Lastly, display the input back to the user.
+    print("Hello, " + name + "! Happy " + day_of_week + "!")
+
+
+main()
