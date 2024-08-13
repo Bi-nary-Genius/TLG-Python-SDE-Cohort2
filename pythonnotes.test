@@ -1,0 +1,12 @@
+# It is a generally a held convention that the main body of your code be in a function called "main"
+
+def main():
+"this code automates configuring either a client or a server to be exposed on a specific port"
+platform= input("is this a client or a server?")
+port_num,= input("What port number should be exposed? ")
+
+
+
+main ()
+
+print("We will expose " + port_num + " on the " + platform + " you speficied.")
