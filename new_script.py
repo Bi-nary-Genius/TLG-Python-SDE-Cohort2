@@ -1,5 +1,8 @@
 #Part 1
-with open("dracula.txt","r") as foo:
+
+vampycount = 0
+
+with open("dracula.txt","r") as fileobj:
 
 #Part 2
 for line in foo:
@@ -8,7 +11,7 @@ for line in foo:
 #Part 3
 for line in foo:
     if "vampire" in line:
-        print(line)
+        print(each_line.strip)
 
 #Part 4
 for line in foo:
