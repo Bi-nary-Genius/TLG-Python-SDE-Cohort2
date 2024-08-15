@@ -1,0 +1,128 @@
+#!/usr/bin/env python3
+
+print("Are you a Camper or Glamper? The final results will reveal if you are ready to rough it in the wild or chill in style. Let's find out. ")
+print("-" * 150)
+
+question = 0
+camper_score = 0
+glamper_score = 0
+total_questions = 7
+
+# In my code, I use a while loop to go through each question until I've asked all seven, and then I use if, elif, and else statements to decide whether the user's input will add to their score e.g.camper or glamper.
+# If the user enters something unexpected, my else statement catches it and lets them know their choice isn't valid, so they can try again.
+
+while question < total_questions:
+    question += 1
+
+    if question == 1:
+        print("1. On your camping trip to the Smokey Mountains, you bring what item to carry your belongings? ")
+        while True:
+            answer = input("Choose your preference (backpack or suitcase): ")
+            if answer.lower() == "backpack":
+                print("You sound like a camper!")
+                camper_score += 1
+                break
+            elif answer.lower() == "suitcase":
+                print("You sound like a glamper!")
+                glamper_score += 1
+                break
+            else:
+                print("Chile, that is not even an option! Please try again.")
+
+    elif question == 2:
+        print("2. For your day hike to Mount Leconte, you wear the following footwear: ")
+        while True:
+            answer = input("Choose your preference (hiking boots or Gucci sneakers): ")
+            if answer.lower() == "hiking boots":
+                print("You sound like a camper!")
+                camper_score += 1
+                break
+            elif answer.lower() == "gucci sneakers":
+                print("You sound like a glamper!")
+                glamper_score += 1
+                break
+            else:
+                print("Chile, that is not even an option! Please try again.")
+
+    elif question == 3:
+        print("3. What is your ideal fireside meal while in Shenandoah National Park?")
+        while True:
+            answer = input("Choose your preference (weiners and s'mores or filet mignon): ")
+            if answer.lower() == "weiners and s'mores":
+                print("You sound like a camper!")
+                camper_score += 1
+                break
+            elif answer.lower() == "filet mignon":
+                print("You sound like a glamper!")
+                glamper_score += 1
+                break
+            else:
+                print("Chile, that is not even an option! Please try again.")
+
+    elif question == 4:
+        print("4. High winds are expected to be 20 mph tomorrow in Paonia, Colorado. Would this be a good time to set up a tarp over your tent or lay rocks around your tent?")
+        while True:
+            answer = input("Choose your preference (set up a tarp or lay rocks): ")
+            if answer.lower() == "lay rocks":
+                print("You sound like a camper!")
+                camper_score += 1
+                break
+            elif answer.lower() == "set up a tarp":
+                print("You sound like a glamper!")
+                glamper_score += 1
+                break
+            else:
+                print("Chile, that is not even an option! Please try again.")
+
+    elif question == 5:
+        print("5. The week before camping at Sandy Pines Campground, do you check the weather forecast?")
+        while True:
+            answer = input("Choose your preference (yes, I need to be prepared or no, I’ll just wing it): ")
+            if answer.lower() == "yes, i need to be prepared":
+                print("You sound like a camper!")
+                camper_score += 1
+                break
+            elif answer.lower() == "no, i’ll just wing it":
+                print("You sound like a glamper!")
+                glamper_score += 1
+                break
+            else:
+                print("Chile, that is not even an option! Please try again.")
+
+    elif question == 6:
+        print("6. While exploring Shabbona Lake, do you scream at the sight of cicadas or wonder how they taste?")
+        while True:
+            answer = input("Choose your preference (scream or wonder how they taste): ")
+            if answer.lower() == "wonder how they taste":
+                print("You sound like a camper!")
+                camper_score += 1
+                break
+            elif answer.lower() == "scream":
+                print("You sound like a glamper!")
+                glamper_score += 1
+                break
+            else:
+                print("Chile, that is not even an option! Please try again.")
+
+    elif question == 7:
+        print("7. You just finished grilling lamb chops at your cabin in Gatlinburg, TN and all of a sudden you notice a black bear charging at you. Do you run to get your bear mace or your phone to take a video?")
+        while True:
+            answer = input("Choose your preference (bear mace or phone): ")
+            if answer.lower() == "bear mace":
+                print("You sound like a camper!")
+                camper_score += 1
+                break
+            elif answer.lower() == "phone":
+                print("You sound like a glamper!")
+                glamper_score += 1
+                break
+            else:
+                print("Chile, that is not even an option! Please try again.")
+
+
+camper_percentage = (camper_score / total_questions) * 100
+glamper_percentage = (glamper_score / total_questions) * 100
+
+# The user will be able to view their score results as percentages and discover if they are a glamper or camper:
+print(f"\nBuzzFeed Results:\nCamper: {camper_percentage:.0f}%\nGlamper: {glamper_percentage:.0f}%")
+
